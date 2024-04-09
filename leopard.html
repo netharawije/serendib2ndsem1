@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wildlife in Sri Lanka : Animals in Sri Lanka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="//unpkg.com/alpinejs" defer></script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="manifest" href="./manifest">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <section class="header4"> 
+        <nav>
+            <section class="container" id="nav-links">
+                <img src="logoelephant.png" width="200" height="100">
+                
+            </section>
+           
+            <section class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">Introduction </a></li>
+                    <li><a href="dwc.html">DWC</a></li>
+                    <li><a href="leopard.html">The Leopard</a></li>
+                    <li><a href="animals.html">Animals in SriLanka</a></li>
+                    <section class="dropdown">
+                      <button class="dropbtn"><li><a href="parks.html">National Parks</a></li></button>
+                      <section class="dropdown_content">
+                          <li><a href="yala.html"> Yala </a></li>
+                          <li><a href="wilpaththu.html">Wilpaththu</a></li>
+                      </section>
+                    <li><a href="contact us.html">Contact us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </section>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+<div x-data="leopardData">
+    <section class="text-box">
+        <h1 x-text="title1" contenteditable="true"></h1>
+        <p x-text="description1" contenteditable="true"></p>
+    </section>
+
+    <section class="all-4">
+        <h1 x-text="title2" contenteditable="true"></h1>
+        <p x-text="description2" contenteditable="true"></p>
+        <section class="leopard-header" id="leopardhdr">
+            <p>The leopard, a majestic wanderer of the wild</p>
+        </section>
+        <p x-text="description4" contenteditable="true"></p>
+        <h2 x-text="title5" contenteditable="true"></h2>
+    </section>
+        <section class="wrapper-l">
+            <section class="container-l">
+              
+                    <section class="container-l">
+                        <input type="radio" name="slide" id="c1" checked>
+                        <label for="c1" class="card">
+                            <section class="row">
+                                <section class="icon">1</section>
+                                <section class="description.l">
+                                    <h4>Yala</h4>
+                                    <p>Yala National Park in Sri Lanka is known for its population of leopards, and it is one of the best places 
+                                        in the world to spot these elusive big cats in the wild.Yala National Park has one of the highest leopard 
+                                        densities in the world. Leopards in Yala inhabit various ecosystems within the park, including dense scrub jungles,
+                                         open savannahs, and coastal areas. They are adaptable and 
+                                        can thrive in a variety of environments.</p>
+                                    </section>
+                            </section>
+                        </label>
+                        <input type="radio" name="slide" id="c2" >
+                        <label for="c2" class="card">
+                            <section class="row">
+                                <section class="icon">2</section>
+                                <section class="description.l">
+                                    <h4>Wilpattu</h4>
+                                    <p>
+                                        Wilpattu National Park in Sri Lanka is another important area where leopards can be found. The Sri Lankan 
+                                        leopard (Panthera pardus kotiya) is the specific 
+                                        subspecies of leopard that inhabits Wilpattu and other parts of the country.Wilpattu National Park provides a
+                                         suitable habitat for these leopards, and they are often spotted by visitors during safari tours. The park's varied landscape,
+                                          which includes dense jungles, scrublands, and numerous
+                                         water bodies like lakes and ponds, creates an ideal environment for leopards.</p>
+                                </section>
+                            </section>
+                        </label>
+                        <input type="radio" name="slide" id="c3" >
+                        <label for="c3" class="card">
+                            <section class="row">
+                                <section class="icon">3</section>
+                                <section class="description.l">
+                                    <h4>Kumana</h4>
+                                    <p>Kumana National Park, also known as Yala East National Park, is located in the Eastern Province of Sri Lanka. While
+                                         the park is renowned for its birdlife, it is not as well-known for leopard sightings as some 
+                                        other national parks in Sri Lanka, such as Yala National Park.
+                                        Leopards do inhabit Kumana National Park, and visitors may have the opportunity to spot them during their visit. The park's diverse ecosystem, which includes dense forests, grasslands, and wetlands, provides suitable habitat for leopards and other wildlife.</p>
+                                </section>
+                            </section>
+                        </label>
+                    </section>
+            </section>
+        </section>
+        <h1 x-text="title9" contenteditable="true"></h1>
+        <img src="leopardartintro.jpg" alt="">
+        <p x-text="description9" contenteditable="true"></p>
+    </section>
+
+    <section class="leopardt-info">
+        <img src="leopardart.jpg">
+        <section class="leopardt-info-text">
+            <h2 x-text="title10" contenteditable="true"></h2>
+            <p x-text="description10" contenteditable="true"></p>
+            <p x-text="description11" contenteditable="true"></p>
+            <p x-text="description12" contenteditable="true"></p>
+        </section>
+    </section>
+
+    <section class="leopardt-info">
+        <img src="leopardart2.jpg">
+        <section class="leopardt-info-text">
+            <h2 x-text="title13" contenteditable="true"></h2>
+            <p x-text="description13" contenteditable="true"></p>
+            <p x-text="description14" contenteditable="true"></p>
+            <p x-text="description15" contenteditable="true"></p>
+        </section>
+    </section>
+
+    <script>
+        const leopardData = {
+            title1: '',
+            description1: '',
+            title2: '',
+            description2: '',
+            description4: '',
+            title5: '',
+            title6: '',
+            description6: '',
+            title7: '',
+            description7: '',
+            title8: '',
+            description8: '',
+            title9: '',
+            description9: '',
+            title10: '',
+            description10: '',
+            description11: '',
+            description12: '',
+            title13: '',
+            description13: '',
+            description14: '',
+            description15: ''
+        };
+
+        fetch('leopard.json')
+        .then(response => response.json())
+        .then(data => {
+            leopardData.title1 = data.title1;
+            leopardData.description1 = data.description1;
+            leopardData.title2 = data.title2;
+            leopardData.description2 = data.description2;
+            leopardData.description4 = data.description4;
+            leopardData.title5 = data.title5;
+            leopardData.title6 = data.title6;
+            leopardData.description6 = data.description6;
+            leopardData.title7 = data.title7;
+            leopardData.description7 = data.description7;
+            leopardData.title8 = data.title8;
+            leopardData.description8 = data.description8;
+            leopardData.title9 = data.title9;
+            leopardData.description9 = data.description9;
+            leopardData.title10 = data.title10;
+            leopardData.description10 = data.description10;
+            leopardData.description11 = data.description11;
+            leopardData.description12 = data.description12;
+            leopardData.title13 = data.title13;
+            leopardData.description13 = data.description13;
+            leopardData.description14 = data.description14;
+            leopardData.description15 = data.description15;
+
+            const jsonDataString = JSON.stringify(leopardData);
+
+                    localStorage.setItem("leopardData",jsonDataString);
+
+                    let leopardDataData = JSON.parse(localStorage.getItem("leopardData"));
+                    
+                    console.log(leopardDataData);
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    </script>
+</div>
+</html>
+
+      
+
+<!-- footer and subscrciption-->
+
+    <!-- footer and subscrciption-->
+
+    <footer class="footer">
+        
+        <section class="content">
+            <section class="about-us">
+                <h3>About Us</h3>
+                <p>Embark on a wild adventure with Serendib Green. 
+                    Explore the untamed beauty of Sri Lanka's diverse ecosystems and discover the rich tapestry of flora and fauna that call this island home.Join us in celebrating and preserving the extraordinary wildlife of Sri Lanka. Let the journey begin!
+                </p>
+                <section class="icons">
+                    <a class="btn" href="https://www.facebook.com" target="_blank"><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+                    <a class="btn" href="https://www.instagram.com" target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                    <a class="btn" href="https://www.twitter.com" target="_blank"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+                    <a class="btn" href="https://www.youtube.com" target="_blank"><iconify-icon icon="mdi:youtube"></iconify-icon></a>
+                    <p>Made with By Serendib Wild</p> 
+                </section>
+            </section>
+        </section>
+
+
+
+
+
+
+
+
+        <div x-data>
+            <div class="box">
+                <img src="https://lh3.googleusercontent.com/u/0/d/1-WTX2Kw4ZlgLnwT9gYyFOxVXowT9eS-t=w1375-h881-iv1" alt="" />
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Our weekly newsletter provides you with the latest updates!</p>
+                <div class="form-control">
+                    <input type="text" class="input" x-model="email" placeholder="Enter e-mail address" />
+                    <button class="btn-sub" @click="$store.subscriptions.subscribe(email); email = '';">Subscribe</button>
+                </div>
+            </div>
+            
+            <!-- Admin Section to View Subscriptions -->
+            <div x-show="$store.auth.isAdmin">
+                <h3>Newsletter Subscriptions</h3>
+                <ul>
+                    <template x-for="email in $store.subscriptions.emails" :key="email">
+                        <li x-text="email"></li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+        
+        <script src="//unpkg.com/alpinejs" defer></script>
+        <script>
+            document.addEventListener('alpine:init', () => {
+               
+                Alpine.store('auth', {
+                    isAdmin: false 
+                });
+                
+             
+                Alpine.store('subscriptions', {
+                    emails: [],
+                    init() {
+                        this.emails = JSON.parse(localStorage.getItem('subscribedEmails')) || [];
+                    },
+                    subscribe(email) {
+                        if (email && !this.emails.includes(email)) {
+                            this.emails.push(email);
+                            localStorage.setItem('subscribedEmails', JSON.stringify(this.emails));
+                            alert("You have subscribed successfully.");
+                        } else {
+                            alert("Please enter a valid email or the email is already subscribed.");
+                        }
+                    }
+                });
+            });
+        </script>
+        
+    
+</footer>
+
+    

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wildlife in Sri Lanka : Animals in Sri Lanka</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<script src="//unpkg.com/alpinejs" defer></script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+<link rel="manifest" href="./site.webmanifest">
+<link rel="manifest" href="./manifest">
+<link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <section class="header2"> 
+        <nav>
+            <section class="container" id="nav-links">
+                <img src="logoelephant.png" width="200" height="100">
+                
+            </section>
+           
+            <section class="nav-links" id="nav-links">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="intro.html">Introduction </a></li>
+                    <li><a href="dwc.html">DWC</a></li>
+                    <li><a href="leopard.html">The Leopard</a></li>
+                    <li><a href="animals.html">Animals in SriLanka</a></li>
+                    <section class="dropdown">
+                      <button class="dropbtn"><li><a href="parks.html">National Parks</a></li></button>
+                      <section class="dropdown_content">
+                          <li><a href="yala.html"> Yala </a></li>
+                          <li><a href="wilpaththu.html">Wilpaththu</a></li>
+                      </section>
+                    <li><a href="contact us.html">Contact us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </section>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+        <div x-data="introData">
+
+            <section class="text-box">
+                <h1 x-text="title1" contenteditable="true"></h1>
+                <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600&display=swap" rel="stylesheet">
+                <p x-text="description1" contenteditable="true"></p>
+            </section>
+        </section>
+        <section class="all-2">
+            <section class="intro.content">
+            <h1 x-text="title2" contenteditable="true"></h1>
+            <p x-text="description2"contenteditable="true"></p>
+                 <section class="intro-header" id="introhdr">
+                    <p>Ceylon</p>
+                 </section>
+        </section>
+        <section class="info-info">
+            <img src="hortonplainsimg.png">
+            <section class="info-info-text">
+              <h2 x-text="title3"contenteditable="true"></h2>
+              <p x-text="description3"contenteditable="true"></p>
+           </section>
+        </section>
+        <section class="info-info">
+            <img src="Sinharaja-Forest-2.jpg">
+            <section class="info-info-text">
+              <h2 x-text="title4"contenteditable="true"></h2>
+              <p x-text="description4"contenteditable="true"></p>
+           </section>
+        </section>
+        <section class="info-info">
+            <img src="udawalawepark.jpg">
+            <section class="info-info-text">
+              <h2 x-text="title5"contenteditable="true"></h2>
+              <p x-text="description5"contenteditable="true"></p>
+           </section>
+        </section>
+    </div>
+        <script>
+            const introData= {
+                    title1: '',
+                    description1: '',
+                    title2: '',
+                    description2: '',
+                    title3: '',
+                    description3: '',
+                    title4: '',
+                    description4: '',
+                    title5: '',
+                    description5: ''
+            };
+            fetch(' intro.json')
+            .then (response => response.json())
+            .then (data =>{
+                introData.title1 = data.title1;
+                introData.description1 = data.description1;
+                introData.title2 = data.title2;
+                introData.description2 = data.description2;
+                introData.title3 = data.title3;
+                introData.description3 = data.description3;
+                introData.title4 = data.title4;
+                introData.description4 = data.description4;
+                introData.title5 = data.title5;
+                introData.description5 = data.description5;
+
+                const jsonDataString = JSON.stringify(introData);
+
+                localStorage.setItem("introData",jsonDataString);
+
+                let introDataData = JSON.parse(localStorage.getItem("introData"));
+
+                console.log(introDataData);
+            })
+
+            
+            .catch(error => console.error('Error fetching data:', error));
+        </script>
+                
+    </section>
+
+   
+    <!---summary table-->
+
+    <table>
+        <thead>
+          <tr>
+            <th>Location</th>
+            <th>map</th>
+            <th>Animal found</th>
+            <th>Intresing fact</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Udawalawe National Park</td>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.370762013887!2d80.87373871017608!3d6.474634123703018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae408ff88887e79%3A0xaf12e79ffbd980d7!2sUdawalawe%20National%20Park!5e0!3m2!1sen!2slk!4v1705300836419!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe></td>
+            <td><img src="udawalawe.elephant.table.jpg" alt=""></td>
+            <td>Sri Lankan elephants hold significant cultural importance in the country. They are considered a symbol of national heritage and are featured prominently in religious and cultural events. Elephants often play a role in traditional 
+                ceremonies, processions, and festivals, carrying sacred relics and symbols.</td>
+          </tr>
+          <tr>
+            <td>Horton Plains National Park</td>
+            <td>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6739945883423!2d80.79975301017791!3d6.8094513197466995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park!5e0!3m2!1sen!2slk!4v1705300881661!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </td>
+            <td><img src="hortonplains.dear.table.jpg" alt=""></td>
+            <td>
+                The Sambar deer in Horton Plains has adapted to the relatively high altitude environment. Horton Plains National Park,
+                 situated at an elevation of around 2,100 meters (6,900 feet) above sea level, experiences cooler temperatures than many
+                  other parts of Sri Lanka. The Sambar deer in this region has evolved to thrive in these cooler conditions,
+                 showcasing how wildlife can adapt to specific environmental niches.
+            </td>
+          </tr>
+          <tr>
+            <td>Sinharaja Forest Reserve</td>
+            <td><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.8991152232393!2d80.45744631017573!3d6.406996124480294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1705300923402!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                 referrerpolicy="no-referrer-when-downgrade"></iframe> </td>
+            <td><img src="Sri-Lanka-Blue-Magpie.table.jpg-AA.webp" alt=""></td>
+            <td>The Sri Lankan Blue Magpie (Urocissa ornata) is not only a visually striking bird with its vibrant blue and white plumage but also possesses interesting behavioral traits. One notable fun fact about the Sri Lankan Blue Magpie is its highly social nature 
+                and its tendency to live in large family groups.</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    </body>
+
+          
+        <!------footer and subscrption form------>
+
+<!-- footer and subscrciption-->
+
+<footer class="footer">
+        
+    <section class="content">
+        <section class="about-us">
+            <h3>About Us</h3>
+            <p>Embark on a wild adventure with Serendib Green. 
+                Explore the untamed beauty of Sri Lanka's diverse ecosystems and discover the rich tapestry of flora and fauna that call this island home.Join us in celebrating and preserving the extraordinary wildlife of Sri Lanka. Let the journey begin!
+            </p>
+            <section class="icons">
+                <a class="btn" href="https://www.facebook.com" target="_blank"><iconify-icon icon="ic:baseline-facebook"></iconify-icon></a>
+                <a class="btn" href="https://www.instagram.com" target="_blank"><iconify-icon icon="mdi:instagram"></iconify-icon></a>
+                <a class="btn" href="https://www.twitter.com" target="_blank"><iconify-icon icon="mdi:twitter"></iconify-icon></a>
+                <a class="btn" href="https://www.youtube.com" target="_blank"><iconify-icon icon="mdi:youtube"></iconify-icon></a>
+                <p>Made with By Serendib Wild</p> 
+            </section>
+        </section>
+    </section>
+
+
+
+
+
+
+
+
+    <div x-data>
+        <div class="box">
+            <img src="https://lh3.googleusercontent.com/u/0/d/1-WTX2Kw4ZlgLnwT9gYyFOxVXowT9eS-t=w1375-h881-iv1" alt="" />
+            <h2>Subscribe to our Newsletter</h2>
+            <p>Our weekly newsletter provides you with the latest updates!</p>
+            <div class="form-control">
+                <input type="text" class="input" x-model="email" placeholder="Enter e-mail address" />
+                <button class="btn-sub" @click="$store.subscriptions.subscribe(email); email = '';">Subscribe</button>
+            </div>
+        </div>
+        
+        <!-- Admin Section to View Subscriptions -->
+        <div x-show="$store.auth.isAdmin">
+            <h3>Newsletter Subscriptions</h3>
+            <ul>
+                <template x-for="email in $store.subscriptions.emails" :key="email">
+                    <li x-text="email"></li>
+                </template>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script>
+        document.addEventListener('alpine:init', () => {
+           
+            Alpine.store('auth', {
+                isAdmin: false 
+            });
+            
+         
+            Alpine.store('subscriptions', {
+                emails: [],
+                init() {
+                    this.emails = JSON.parse(localStorage.getItem('subscribedEmails')) || [];
+                },
+                subscribe(email) {
+                    if (email && !this.emails.includes(email)) {
+                        this.emails.push(email);
+                        localStorage.setItem('subscribedEmails', JSON.stringify(this.emails));
+                        alert("You have subscribed successfully.");
+                    } else {
+                        alert("Please enter a valid email or the email is already subscribed.");
+                    }
+                }
+            });
+        });
+    </script>
+    
+
+</footer>

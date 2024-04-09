@@ -1,0 +1,50 @@
+{
+    "portalInfo": {
+      "welcomeTitle": "Welcome to Our Wildlife Portal!",
+      "welcomeMessage": "At our Wildlife Portal, we're dedicated to bringing you closer to the breathtaking beauty of Sri Lanka's wildlife. Whether you're an avid nature enthusiast, a researcher, or simply curious about the diverse fauna of this stunning island, you've come to the right place."
+    },
+    "forms": {
+      "signup": {
+        "title": "SIGN UP",
+        "fields": {
+          "username": {
+            "placeholder": "Username",
+            "type": "text"
+          },
+          "email": {
+            "placeholder": "Email",
+            "type": "email"
+          },
+          "password": {
+            "placeholder": "Password",
+            "type": "password"
+          }
+        },
+        "submitText": "Sign up",
+        "alternateLink": {
+          "text": "Already have an account? Sign in",
+          "link": "#"
+        }
+      },
+      "login": {
+        "title": "LOG IN",
+        "fields": {
+          "username": {
+            "placeholder": "Username",
+            "type": "text"
+          },
+          "password": {
+            "placeholder": "Password",
+            "type": "password"
+          }
+        },
+        "submitText": "Log in",
+        "forgotPasswordLink": "#",
+        "alternateLink": {
+          "text": "Don't have an account? Signup",
+          "link": "#"
+        }
+      }
+    }
+  }
+  

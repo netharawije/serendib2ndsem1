@@ -1,0 +1,364 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif; /* It seems you intended to use two font families, specify them in separate lines */
+    font-family: 'Poppins', sans-serif; /* This line will override the previous one, so only 'Poppins' will be applied */
+}
+
+.header10{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(wil6.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: table;
+    background-attachment: fixed;
+
+}
+
+
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height:2px;
+    background: #7be0b9;
+    display: block;
+    margin: auto;
+    transition: 0.5s
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: beige;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color:beige;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    transition: 1s;
+}
+
+
+nav .fa{
+    display: none;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    
+    
+}
+.dropdown_content{
+    display: none;
+    z-index: 1;
+    position: absolute;
+    background-color: #000;
+}
+
+.dropdown a{
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.dropdown_content li a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    margin-top: -10px;
+}
+.dropdown:hover > .dropdown_content{
+    display: block;
+    
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;    
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+}
+nav.fa{
+     display: block;
+     color: #fff;
+     margin: 10px;
+     font-size: 22px;
+     cursor: pointer;
+
+}
+.nav-links ul{
+    padding: 30px;
+}
+.animals-img{
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+/* LOGIN AND SIGNUP */
+
+.main {
+    background-color: transparent; 
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    z-index: 0;
+}
+
+.sign {
+    padding-top: 40px;
+    color: #408a5a;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    padding-bottom: 5%;
+}
+
+.un, .pass {
+    width: 76%;
+    color: rgb(38, 50, 56);
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: rgba(136, 126, 126, 0.04);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0.02);
+    margin-bottom: 27px;
+    margin-left: 46px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+form.form1 {
+    padding-top: 20px;
+}
+
+.pass {
+    margin-bottom: 50px; /* Removed duplicate margin-bottom declaration */
+}
+
+.un:focus, .pass:focus {
+    border: 2px solid rgba(0, 0, 0, 0.18) !important;
+}
+
+.submit {
+    cursor: pointer;
+    border-radius: 5em;
+    color: #fff;
+    background: linear-gradient(to right, #429580, #2f6c5d);
+    border: 0;
+    padding: 10px 40px; /* Combined padding declarations for better readability */
+    font-family: 'Ubuntu', sans-serif;
+    margin-left: 35%;
+    font-size: 13px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #155757;
+    padding-top: 15px;
+}
+
+a {
+    text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+    color: #1f5e69;
+    text-decoration: none;
+}
+
+.form1 .bottom-link{
+    text-align: center;
+}
+.form1 .bottom-link2{
+    text-align: center;
+}
+
+
+/*footer*/
+
+
+
+
+
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #71a372;
+    padding: 50px;
+}
+.footer h3 {
+    color: black;
+    font-size: large;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: large;
+    padding-top: 20px;
+    color: black;
+}
+.icons {
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    color: rgb(255, 255, 255);
+    font-size: 24px; 
+    transition: color 0.3s ease; 
+}
+
+
+.icons:hover {
+    color: #54854b; 
+}
+
+.footer p {
+    color: black;
+    font-size: large;
+}
+
+.box {
+    background-color: #2e523c;
+    border-radius: 20px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box h2 {
+    margin: 10px 0 0;
+    color: #FFF;
+}
+
+.box p {
+    color: #ffffff;
+    margin: 10px;
+}
+
+.box img {
+    max-width: 100%;
+    width: 400px;
+}
+
+.form-control {
+    position: relative;
+    margin: 30px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.input {
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    font-family: 'Muli', sans-serif;
+    font-size: 14px;
+    height: 42px;
+    padding: 12px 25px;
+    width: 100%;
+    
+}
+
+.btn-sub {
+    background-color: #163628;
+    border: 0;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    height: 42px;
+    padding: 12px 25px;
+    margin-top: 10%;
+    padding-bottom:10% ;
+}
+
+.input:focus, .btn:focus {
+    outline: 0;
+}
+
+
+@media (max-width: 600px) {
+    .main {
+        border-radius: 0px;
+    }
+}
+
